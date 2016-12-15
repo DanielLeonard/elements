@@ -168,9 +168,6 @@ hr{width: 100%;}
     text-decoration: none;
 
 
-    animation-name: pulse;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
 
 
     }
@@ -179,6 +176,9 @@ hr{width: 100%;}
 
     .element:hover{
 
+      animation-name: pulse;
+      animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 
 
     }
@@ -190,7 +190,8 @@ hr{width: 100%;}
 
     @keyframes pulse{
 
-      50% {
+      100% { padding-left: 10px;
+        padding-right: 10px;
 
 
     }
