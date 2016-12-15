@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1.3em;
+}
+
+body {
+    font-family: "Proxima Nova", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    font-weight: 300;
+    background: #1C5DB2;
+    padding-left: 2em;
+}
+
+
+/* NOTE: text */
+
+hr {
+    width: 100%;
+    margin-top: 2em;
+    height: 4px;
+    border-style: none;
+    background: #ffffff;
+}
+
+
+/* NOTE: nav */
+
+nav {
+  width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.backbutton {
+    color: #ffffff;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-left-style: solid;
+    border-color: #00E8D6;
+    padding-left: 1em;
+}
+
+.backbutton:hover {
+    animation-name: button2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button2 {
+    50% {
+        padding-left: 2em;
+        border-left-style: solid;
+    }
+    100% {
+        padding-left: 2em;
+        border-left-style: solid;
+    }
+}
+
+
+/* NOTE: header */
+
+header {
+}
+
+
+/* NOTE: main */
+
+
+.main-title {
+    font-size: 6em;
+    text-align: left;
+    font-weight: 600;
+    color: #00E8D6;
+
+}
+
+.discovery {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.facts {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+
+/* NOTE: children */
+
+.section-title {
+    font-size: 3em;
+    text-align: left;
+    color: #00E8D6;
+    font-weight: 500;
+
+}
+
+.child-disc {
+    width: 300px;
+    height: 100px;
+    margin-top: 2em;
+    text-align: left;
+}
+
+.child-fact {
+    width: 225px;
+    height: 100px;
+    margin-top: 2em;
+    text-align: left;
+}
+
+
+/* NOTE: fact text */
+
+.fact-upper {
+    font-size: 2em;
+    color: #00E8D6;
+    font-weight: 600;
+}
+
+.fact-lower {
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+/* NOTE: video */
+
+video {
+    background: white;
+    opacity: 0.9;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}

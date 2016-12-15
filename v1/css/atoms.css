@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1.3em;
+}
+
+body {
+    font-family: "Proxima Nova", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1C5DB2;
+    color: #ffffff;
+}
+
+/* NOTE: background pulse */
+
+
+
+
+
+
+/* NOTE: NAV */
+
+.tidynav {
+    height: 30px;
+    display: flex;
+    flex-flow: center;
+    padding-top: 2.5vh;
+    width: 100%;
+
+}
+
+.leftnav {
+  text-align: center;
+    width: 33.33%;
+
+    height: 30px;
+}
+
+.midbrand {
+  text-align: center;
+    width: 33.33%;
+    height: 30px;
+    color: #4CFF55;
+}
+
+.rightnav {
+    width: 33.33%;
+    text-align: center;
+    height: 30px;
+}
+
+.navlink {
+    font-weight: 500;
+    font-size: 1.1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: #ffffff;
+    position: relative;
+    top: 25%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: #00E8D6;
+}
+
+
+
+
+
+.navlink:hover{animation-name: navgrow;
+animation-duration: 1s;
+ animation-fill-mode: forwards;}
+
+
+
+@keyframes navgrow {
+
+
+  100% {
+padding-left: 1.5em;
+padding-right: 1.5em;
+}
+
+}
+
+
+
+
+
+
+/*-text-*/
+
+h1{font-size: 4.236em;}
+
+h2{font-size: 2.618em;}
+
+h3{font-size: 1.618em}
+
+p{font-size: 1em;}
+
+hr{width: 100%;}
+
+
+/* NOTE: sub header section */
+
+.header-container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;
+    justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.subheader>h3{
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+
+/* NOTE: main section */
+
+.mainsection{
+  margin-top: 200px;
+    width: 100%;
+}
+
+
+
+.container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;
+    justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+
+   }
+
+
+    /* NOTE: child */
+
+    .element {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 1%;
+      border-left-style: solid;
+      border-right-style: solid;
+      border-width: 5px;
+      border-color: #00E8D6;
+      color: #ffffff;
+
+      margin: 2em;
+    text-decoration: none;
+
+
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+    }
+
+    /* NOTE: element hover */
+
+    .element:hover{
+
+
+
+    }
+
+
+
+
+    /* NOTE: animation for elements pulsing */
+
+    @keyframes pulse{
+
+      50% {
+
+
+    }
+
+    }
+
+/* NOTE: inside symbol */
+
+    .chemicalwrap{text-align: center;
+      position: relative;
+  top: 50%;
+  transform: translateY(-50%);}
+
+  .chemicalwrap > h3 {font-size: 1.3em;
+    padding-bottom: 1em;
+  padding-top: 1em;}
+
+  .chemicalwrap > p {font-size: 0.75em;}
+
+
+
+/* NOTE: individual elements */
+
+.element:nth-child(1) {
+}
