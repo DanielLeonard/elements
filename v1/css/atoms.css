@@ -163,24 +163,23 @@ hr{width: 100%;}
       border-width: 5px;
       border-color: #00E8D6;
       color: #ffffff;
-
       margin: 2em;
     text-decoration: none;
+    }
 
+    @keyframes pulse{
 
-
+      50% { border-color: #00D1C1;
+      }
 
     }
 
     /* NOTE: element hover */
 
     .element:hover{
-
-      animation-name: pulse;
+      animation-name: elementhover;
       animation-duration: 0.5s;
   animation-fill-mode: forwards;
-
-
     }
 
 
@@ -188,11 +187,12 @@ hr{width: 100%;}
 
     /* NOTE: animation for elements pulsing */
 
-    @keyframes pulse{
+    @keyframes elementhover{
 
-      100% { padding-left: 10px;
+      100% {
+        padding-left: 10px;
         padding-right: 10px;
-    }
+      }
 
     }
 
