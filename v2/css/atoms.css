@@ -105,7 +105,10 @@ text-align: center;}
       margin-left: -10px;
       }
 
-      .subheader{text-align: center;}
+      .subheader{text-align: center;
+      text-transform: uppercase;
+    font-size: 1.2em;
+  margin-top: 2em;}
 
 
 
@@ -132,7 +135,7 @@ height: 200px;
 background: rgba(255, 255, 255, 0.8);
 color: #000000;
 border-top: 3px solid black;
- box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.2)}
+ box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.2)}
 
 .child-undone{
   width: 200px;
