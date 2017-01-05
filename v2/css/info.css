@@ -68,6 +68,7 @@ nav {
     margin-bottom: 2em;
     background: rgba(255, 255, 255, 0.9);
     position: fixed;
+    z-index: 999999;
 }
 
 .backbutton {
