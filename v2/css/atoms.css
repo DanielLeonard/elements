@@ -164,6 +164,18 @@ border-style: none;
 height: 3px;}
 
 
+/* NOTE: footer */
+
+footer{text-align: center;
+height: 50px;}
+
+
+
+footer > p > a {text-decoration: none;
+color: #00B27D }
+
+
+
 /* NOTE: child animation */
 
 .child:hover{animation-name: element-hover;
@@ -181,5 +193,42 @@ height: 3px;}
   border-top-width: 3px;
   border-top-color: white;
 }
+
+}
+
+
+/* NOTE: media Q */
+
+@media only screen and (max-width: 700px) {
+
+h2{font-size: 1em;}
+
+h3{font-size: 1em;}
+
+.child{width: 150px;
+height: 150px;}
+
+.child-undone{width: 150px;
+height: 150px;}
+
+.element-text-holder, h2, h3, p {padding-top: 10px;}
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+h2{font-size: 1em;}
+
+h3{font-size: 1em;}
+
+.child{width: 125px;
+height: 125px;}
+
+.child-undone{width: 125px;
+height: 125px;}
+
+.element-text-holder, h2, h3, p {padding-top: 10px;}
+
 
 }
