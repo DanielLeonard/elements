@@ -50,7 +50,9 @@ hr {
     margin-bottom: 2em;
 }
 
-p{}
+p{padding-bottom: 1em;}
+
+sup{font-size: 0.5em;}
 
   /* NOTE: background */
 
@@ -99,7 +101,7 @@ nav {
 /* NOTE: header */
 
 header {
-  height: 100px;
+  height: auto;
   width: 90%;
   display: block;
   margin-left: auto;
@@ -107,6 +109,21 @@ header {
 padding-top: 100px;
 
 }
+
+.symbol_box{border-style: solid;
+border-color: #ffffff;
+border-width: 7px;
+margin-left: 2px;
+width: 100px;
+height: 100px;
+text-align: center;
+margin-bottom: 1em;}
+
+.symbol_header{font-size: 5em;
+  position: relative;
+    top: 50%;
+    transform: translateY(-45%);
+  color: rgba(0, 178, 125, 1.0 );}
 
 
 /* NOTE: main */
@@ -163,7 +180,7 @@ height: auto;
 
 
 .child-disc {
-    width: 350px;
+    width: 370px;
     height: 100px;
 
     text-align: left;
@@ -171,7 +188,7 @@ height: auto;
 }
 
 .child-fact {
-    width: 350px;
+    width: 370px;
     height: 150px;
     text-align: left;
 
@@ -202,14 +219,14 @@ height: auto;
 
 @media only screen and (max-width: 400px) {
 
-  .fact-upper{font-size: 1em;}
+  .fact-upper{font-size: 0.7em;}
 
   .fact-lower{font-size: 0.7em;}
 
-  .child-fact{width: 50%;
+  .child-fact{width: 100px;
   height: 80px;}
 
-  .child-disc{width: 10px;
+  .child-disc{width: 150px;
   height: 30px;}
 
 
@@ -225,14 +242,14 @@ h4 {font-size: 1.2em;}
 
 .section-title {font-size: 1.5em;}
 
-.fact-upper{font-size: 1.2em;}
+.fact-upper{font-size: 1em;}
 
 .fact-lower{font-size: 0.9em;}
 
-.child-fact{width: 170px;
+.child-fact{width: 300px;
 height: 80px;}
 
-.child-disc{width: 170px;
+.child-disc{width: 300px;
 height: 80px;}
 
 }
