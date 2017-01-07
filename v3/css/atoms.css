@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1.3em;
+}
+
+body {
+    font-family: "industry", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #222222;
+
+    color: #ffffff;
+    width: 100%;
+}
+/* NOTE: slideshow */
+
+
+
+/* NOTE: text */
+
+h1{font-size: 7em;
+color: #FFFFFF}
+
+h2{font-size: 2em;}
+.subheader {font-weight: lighter;}
+
+h3{font-size: 1.8em;}
+
+h4{}
+
+p{font-size: 1em;}
+
+a{text-decoration: none;
+font-size: 1em;}
+
+/* NOTE: navigation */
+
+
+
+/* NOTE: header */
+
+header{height: 400px;
+padding-bottom: 6em;}
+
+.atom-container
+{ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+height: 400px;
+display: flex;
+flex-flow: wrap;
+align-content: center;
+justify-content: center;
+padding-bottom: 2em;
+}
+
+.atom-child{align-self: center;
+width: 125px;
+height: 125px;
+text-align: center;}
+
+/* NOTE: atom thing */
+
+.spin-atom{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 15%;
+  transform: translateY(-50%);
+    border: 5px solid #00B27D;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 4s linear infinite;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spin-electron { height: 15px;
+    width: 15px;
+    background: #FFFFFF;
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    border-radius: 50%;
+    margin-left: -10px;
+     }
+
+  .spin-electron-2{ height: 15px;
+      width: 15px;
+      background: #FFFFFF;
+      position: absolute;
+      bottom: -9px;
+      left: 50%;
+      border-radius: 50%;
+      margin-left: -10px;
+      }
+
+      .subheader{text-align: center;
+      text-transform: uppercase;
+    font-size: 1.2em;
+  margin-top: 2em;}
+
+
+.arrowsvg{width: 30px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+
+/* NOTE: element table */
+
+.container-1 {width: 100%;
+height: auto;
+display: flex;
+flex-flow: wrap;
+align-content: center;
+justify-content: center;
+padding-bottom: 2em;
+opacity: 0;
+}
+
+.container-1-show {width: 100%;
+height: auto;
+display: flex;
+flex-flow: wrap;
+align-content: center;
+justify-content: center;
+padding-bottom: 2em;
+animation-name: appear;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+}
+
+@keyframes appear {
+
+  0%{transform: translateY(-100px);
+  opacity: 0;}
+
+
+  100%{transform: translateY(0px);
+  opacity: 1;}
+
+}
+
+
+
+
+.child{width: 200px;
+margin: 10px;
+height: 200px;
+background: rgba(255, 255, 255, 0.8);
+color: #000000;
+border-top: 3px solid black;
+ box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.2);
+}
+
+
+
+.child-undone{
+  width: 200px;
+  margin: 10px;
+  height: 200px;
+  background: rgba(160, 160, 160, 0.5);
+  color: #000000;
+  border-top: 3px solid black;
+   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.2)
+}
+
+
+
+
+
+
+
+/* NOTE: child text */
+
+.element-text-holder{padding-left: 1em;}
+
+.element-text-holder, h2, h3, p {padding-top: 1em;}
+
+
+hr{width: 50%;
+margin-top: 1em;
+background: #000000;
+border-style: none;
+height: 3px;}
+
+
+/* NOTE: footer */
+
+footer{text-align: center;
+height: 50px;}
+
+
+
+footer > p > a {text-decoration: none;
+color: #00B27D }
+
+
+
+/* NOTE: child animation */
+
+.child:hover{animation-name: element-hover;
+  animation-duration: 0.2s;
+  animation-timing-function:ease-in;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes element-hover {
+
+  100%{
+  background: rgba(0, 178, 125, 0.8 );
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: white;
+}
+
+}
+
+
+/* NOTE: media Q */
+
+@media only screen and (max-width: 700px) {
+
+h2{font-size: 1em;}
+
+h3{font-size: 1em;}
+
+.child{width: 150px;
+height: 150px;}
+
+.child-undone{width: 150px;
+height: 150px;}
+
+.element-text-holder, h2, h3, p {padding-top: 10px;}
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+h2{font-size: 1em;}
+
+h3{font-size: 1em;}
+
+.child{width: 125px;
+height: 125px;}
+
+.child-undone{width: 125px;
+height: 125px;}
+
+.element-text-holder, h2, h3, p {padding-top: 10px;}
+
+
+}

@@ -2,19 +2,14 @@ $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop();
 
-  if(wScroll > $('.child').offset().top - ($(window).height() / 1.2)) {
+  if(wScroll > $('.container-1').offset().top - ($(window).height() / 0.9)) {
 
-    $('.child').each(function(){
+    $('.container-1').each(function(){
 
-      $('.child').addClass('child-show');
-
-    });
-
-    $('.headings').each(function(){
-
-      $('.headings').addClass('headings-show');
+      $('.container-1').addClass('container-1-show');
 
     });
+
 
   }
 
