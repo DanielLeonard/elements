@@ -17,7 +17,9 @@ body {
 /* NOTE: slideshow */
 
 
-
+#particles-js{height: 400px;
+width: 100%;
+z-index: 99;}
 
 /* NOTE: text */
 
